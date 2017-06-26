@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>脆弱性のテスト</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <input id="input" type="text" value="type here" />
+    <button id="submit">submit</button>
+  <div id="result">
+    <p>result goes here</p>
+  </div>
+
+  <iframe src="https://www.google.com"></iframe>
+
+
+  <script>
+    $("#submit").on("click", function(){
+      let result = $("#input").val();
+      $("#result").html(result);
+    });
+  </script>
+</body>
+
+</html>
